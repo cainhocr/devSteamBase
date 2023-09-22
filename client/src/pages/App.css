@@ -4,6 +4,21 @@
   font-family: "Inter", sans-serif;
 }
 
-body {
+body,
+html {
   background: #1b2838;
+  color: #fff;
+}
+
+.saleContainer{
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+@media (max-width: 850px) {
+  .saleContainer{
+    justify-content: center;
+  }
 }
