@@ -3,6 +3,7 @@
   width: 350px;
   position: absolute;
   right: 60px;
+  top: 0;
   padding: 20px;
   z-index: 10;
 }
@@ -15,9 +16,17 @@
   padding-bottom: 40px;
 }
 
-.priceline {
+.priceLine {
   display: flex;
   justify-content: space-between;
   margin-top: 30px;
+}
+
+.priceLine h2 {
   font-size: 16px;
+}
+
+.priceLine h2:nth-of-type(2) {
+  color: #beeb14;
+  padding-bottom: 20px;
 }

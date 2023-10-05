@@ -1,3 +1,7 @@
-.cartButton img{
-cursor: pointer;
+.cartButton {
+  position: relative;
+}
+
+.cartButton img {
+  cursor: pointer;
 }
