@@ -4,7 +4,9 @@ import styles from "./saleCard.module.css";
 const SaleCard = ({ discount, fullPrice, title }) => {
   return(
   <div className={styles.saleCard}>
-    <img src={`/src/assets/products/${title}.png`} alt="" width={250} height={300} />
+    <img 
+    src={`/src/assets/products/${title}.png`} 
+    alt="" width={250} height={300} />
     <div className={styles.info}>
         <h3>Oferta Exclusiva</h3>
         <div className={styles.priceCard}>
