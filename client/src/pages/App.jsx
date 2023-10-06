@@ -36,8 +36,30 @@ const App = () => {
               })
             }
           />
-          <SaleCard title={"dota-2"} fullPrice={309.9} discount={50} />
-          <SaleCard title={"valorant"} fullPrice={290.99} discount={40} />
+          <SaleCard
+            title={"dota-2"}
+            fullPrice={309.9}
+            discount={50}
+            onAdd={() =>
+              handleAddProduct({
+                name: "dota-2",
+                price: 309.9 - 309.9 * 0.5,
+                img: "dota-2",
+              })
+            }
+          />
+          <SaleCard
+            title={"valorant"}
+            fullPrice={290.99}
+            discount={40}
+            onAdd={() =>
+              handleAddProduct({
+                name: "valorant",
+                price: 290.99 - 290.99 * 0.4,
+                img: "valorant",
+              })
+            }
+          />
         </div>
         <div className="gameSession">
           <Subtitle>Outros Jogos</Subtitle>
@@ -48,6 +70,22 @@ const App = () => {
               price={99.9}
             >
               Counter Strike: Global Offensive
+            </GameCard>
+
+            <GameCard
+              title={"GTA-V"}
+              info={"Ação, Apologia e MultiJogador"}
+              price={229}
+            >
+              GTA V
+            </GameCard>
+
+            <GameCard
+              title={"FIFA23"}
+              info={"Esporte e MultiJogador"}
+              price={129}
+            >
+              FIFA23
             </GameCard>
           </div>
         </div>
