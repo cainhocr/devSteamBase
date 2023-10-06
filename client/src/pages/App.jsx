@@ -11,7 +11,11 @@ import { useRecoilState } from "recoil";
 const App = () => {
   const [cart, setCart] = useRecoilState(cartState);
 
+  const handleAddProduct = (info) => {
+    setCart([...cart, info]);
+  };
 
+  //console.log(cart);
 
   return (
     <div>
@@ -24,11 +28,13 @@ const App = () => {
             title={"league-of-legends"}
             fullPrice={199.9}
             discount={30}
-            onAdd={() => handleAddProduct({
-              name: "League of Legends",
-              price: 99.80,
-              img: "League of Legends"
-            })}
+            onAdd={() =>
+              handleAddProduct({
+                name: "league-of-legends",
+                price: 199.99 - 199.99 * 0.3,
+                img: "league-of-legends",
+              })
+            }
           />
           <SaleCard title={"dota-2"} fullPrice={309.9} discount={50} />
           <SaleCard title={"valorant"} fullPrice={290.99} discount={40} />

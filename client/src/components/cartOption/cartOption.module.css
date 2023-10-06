@@ -12,6 +12,7 @@
 .info {
   display: flex;
   flex-direction: column;
+  align-items: flex-end;
   gap: 5px;
   justify-content: center;
 }
@@ -28,5 +29,7 @@ color: #beeb14;
     color: red;
     font-size: 12px;
     font-style: italic;
+    gap: 5em;
     cursor: pointer;
+    text-align: right;
 }

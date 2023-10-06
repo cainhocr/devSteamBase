@@ -11,8 +11,8 @@ const CartOption = ({ img, title, price, onRemove }) => {
       />
       <div className={styles.info}>
         <h3>{title}</h3>
-        <h3>R${price.toFixed(2)}</h3>
-        <p>Remover</p>
+        <h3>R${price.toFixed(2).replace(".",",")}</h3>
+        <p onClick={onRemove}>Remover</p>
       </div>
     </div>
   );
